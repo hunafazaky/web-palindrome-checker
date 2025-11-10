@@ -1,0 +1,14 @@
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#result {
+    background-color: #444;
+    color: #eee;
+    max-width: 500px;
+    height: 200px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
