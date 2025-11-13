@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- === GOOGLE FONT === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
-      <input id="text-input" type="text" />
-      <button id="check-btn">check</button>
-      <div id="result">
-        <h1>test</h1>
-      </div>
+      <h1 id="main-title">Palindrome Checker</h1>
+      <article id="main-card">
+        <section class="input-box">
+          <input id="text-input" type="text" />
+          <button id="check-btn">check</button>
+        </section>
+        <section class="output-box">
+          <p id="result">the results will be displayed here...</p>
+        </section>
+      </article>
     </main>
     <script src="script.js"></script>
   </body>

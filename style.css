@@ -1,14 +1,91 @@
-main {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+:root {
+  /* === SIGNATURE COLORS === */
+  --sign-dark: #0b192c;
+  --sign-light: #f2f2f2;
+  --sign-orange: #ff6500;
+  --sign-blue: #1e3e62;
+  --sign-gray: #eaefef;
 }
+
+* {
+  /* === FONT SETTINGS === */
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  /* === OTHER SETTINGS === */
+  box-sizing: border-box;
+}
+
+main {
+  background-color: var(--sign-light);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#main-card {
+  background-color: var(--sign-dark);
+  color: var(--sign-light);
+  width: clamp(200px, 50vw, 400px);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 #result {
-    background-color: #444;
-    color: #eee;
-    max-width: 500px;
-    height: 200px;
-    margin: 1em auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--sign-gray);
+  color: var(--sign-dark);
+  width: 100%;
+  height: 200px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+#text-input {
+  background-color: var(--sign-gray);
+  min-width: 0;
+  flex: 1 1 74%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#check-btn {
+  background-color: var(--sign-orange);
+  color: var(--sign-light);
+  flex: 0 0 24%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+#check-btn:hover {
+  transition: transform 0.2s ease;
+  transform: scale(0.98);
+  cursor: pointer;
+  border: 2px solid var(--sign-light);
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.output-box {
+  width: 100%;
 }
